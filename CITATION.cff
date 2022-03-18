@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: "Zhenchao Jin"
+title: "CodeFree: Make no code a reality"
+date-released: 2022-03-18
+url: "https://github.com/CharlesPikachu/codefree"
+license: Apache-2.0

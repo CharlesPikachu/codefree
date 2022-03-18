@@ -1,6 +1,6 @@
 '''
 Function:
-    Base class for searching codes
+    Base class for searching code
 Author:
     Zhenchao Jin
 WeChat public account:
@@ -10,7 +10,7 @@ import os
 import requests
 
 
-'''Base class for searching codes'''
+'''Base class for searching code'''
 class BaseEngine():
     def __init__(self, keyword, proxies={}, **kwargs):
         self.rootdir = os.path.split(os.path.abspath(__file__))[0]

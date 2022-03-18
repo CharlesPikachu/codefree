@@ -1,6 +1,6 @@
 '''
 Function:
-    Search codes from StackOverflow
+    Search code from StackOverflow
 Author:
     Zhenchao Jin
 WeChat public account:
@@ -28,15 +28,15 @@ class StackOverflow(BaseEngine):
         if kwargs.get('return_code', True): return code
         ctx = compile(code, '', 'exec')
         return exec(ctx, kwargs.get('globals', {}), kwargs.get('locals', {}))
-    '''try to check the correctness of the codes'''
+    '''try to check the correctness of the code'''
     def checker(self, code):
-        # try to check whether the codes can be compiled
+        # try to check whether the code can be compiled
         try:
             ctx = compile(code, '', 'exec')
             exec(ctx)
         except:
             return False
-        # try to check the grammar of the codes
+        # try to check the grammar of the code
         tmpfilepath = os.path.join(self.rootdir, 'tmp.py')
         fp = open(tmpfilepath, 'w')
         fp.write(code)
@@ -45,7 +45,7 @@ class StackOverflow(BaseEngine):
         os.remove(tmpfilepath)
         if len(p.stdout) > 0: return False
         return True
-    '''search the suitable codes from StackOverflow'''
+    '''search the suitable code from StackOverflow'''
     def search(self):
         keyword = self.keyword.lower().replace('stackoverflow.', '').replace('_', ' ')
         params = {
@@ -56,9 +56,9 @@ class StackOverflow(BaseEngine):
             "intitle": keyword,
         }
         answers = self.session.get(f'{self.api_url}/search', params=params).json()
-        if not answers['items']: raise RuntimeError('Fail to search the suitable codes from StackOverflow')
+        if not answers['items']: raise RuntimeError('Fail to search the suitable code from StackOverflow')
         return answers
-    '''parse the codes from html'''
+    '''parse the code from html'''
     def parse(self, url):
         response = self.session.get(url, headers=self.headers)
         answers = re.findall(r'<div id="answer-.*?</table', response.text, re.DOTALL)
