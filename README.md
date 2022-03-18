@@ -22,7 +22,7 @@ You can star this repository to keep track of the project if it's helpful for yo
 ```
 
 
-# Support List
+# Support Sources
 | Source                 | Official Website                                                 | Core Code                                              |
 | :----:                 | :----:                                                           | :----:                                                 |
 | Stackoverflow          | [click](https://stackoverflow.com/)                              | [click](./codefree/sources/stackoverflow.py)           |
@@ -68,6 +68,8 @@ print(code)
 - [Paperdl](https://github.com/CharlesPikachu/paperdl): Search and download paper from specific websites.
 - [Sciogovterminal](https://github.com/CharlesPikachu/sciogovterminal): Browse "The State Council Information Office of the People's Republic of China" in the terminal.
 - [CodeFree](https://github.com/CharlesPikachu/codefree): Make no code a reality.
+- [DeepLearningToys](https://github.com/CharlesPikachu/deeplearningtoys): Some deep learning toys implemented in pytorch.
+- [DataAnalysis](https://github.com/CharlesPikachu/dataanalysis): Some data analysis projects in charles_pikachu.
 
 
 # More
