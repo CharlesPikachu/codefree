@@ -46,12 +46,27 @@ run "pip install git+https://github.com/CharlesPikachu/codefree.git@master"
 
 
 # Quick Start
+
+#### Search Code
+
 ```python
 from codefree import codefree
 
 engine = codefree.CodeFree(keyword='quick sort')
 code = engine(return_code=True)
 print(code)
+```
+
+#### Execute Code
+
+```python
+from codefree import codefree
+
+engine = codefree.CodeFree(keyword='quick sort')
+lst = [2, 5, 1, 4, 6, 10, 3]
+g = {'lst': lst}
+engine(return_code=False, globals=g, following_code='result = quickSort(lst)')
+print(g['result'])
 ```
 
 
