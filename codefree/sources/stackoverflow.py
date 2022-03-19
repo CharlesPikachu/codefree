@@ -26,7 +26,7 @@ class StackOverflow(BaseEngine):
             code = self.parse(link)
             if code: break
         if kwargs.get('return_code', True): return code
-        ctx = compile(code, '', 'exec')
+        ctx = compile(code + '\n' + kwargs.get('following_code', ''), '', 'exec')
         return exec(ctx, kwargs.get('globals', {}), kwargs.get('locals', {}))
     '''try to check the correctness of the code'''
     def checker(self, code):
