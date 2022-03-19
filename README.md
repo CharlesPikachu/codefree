@@ -23,9 +23,9 @@ You can star this repository to keep track of the project if it's helpful for yo
 
 
 # Support Sources
-| Source                 | Official Website                                                 | Core Code                                              |
-| :----:                 | :----:                                                           | :----:                                                 |
-| Stackoverflow          | [click](https://stackoverflow.com/)                              | [click](./codefree/sources/stackoverflow.py)           |
+| Source                 | Official Website of the Source                                   | Core Code                                              | Reference                                                   |
+| :----:                 | :----:                                                           | :----:                                                 | :----:                                                      |
+| Stackoverflow          | [click](https://stackoverflow.com/)                              | [click](./codefree/sources/stackoverflow.py)           | [click](https://github.com/drathier/stack-overflow-import)  |
 
 
 # Install
