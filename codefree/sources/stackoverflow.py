@@ -27,7 +27,7 @@ class StackOverflow(BaseEngine):
             if code: break
         if kwargs.get('return_code', True): return code
         ctx = compile(code + '\n' + kwargs.get('following_code', ''), '', 'exec')
-        return exec(ctx, kwargs.get('globals', {}), kwargs.get('locals', {}))
+        return exec(ctx, kwargs.get('globals', {}))
     '''try to check the correctness of the code'''
     def checker(self, code):
         # try to check whether the code can be compiled
