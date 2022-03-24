@@ -18,6 +18,10 @@ class CodeFree():
         }
         assert source in self.supported_sources, f'Source {self.source} has not been supported'
         self.selected_source = self.supported_sources[self.source](keyword=keyword, proxies=proxies, **kwargs)
+        print(self)
     '''call'''
     def __call__(self, **kwargs):
         return self.selected_source(**kwargs)
+    '''str'''
+    def __str__(self):
+        return 'Welcome to use codefree!\nYou can visit https://github.com/CharlesPikachu/codefree for more details.'
