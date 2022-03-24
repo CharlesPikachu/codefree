@@ -43,6 +43,6 @@ print(g['result'])
 效果如下:
 
 <div align="center">
-  <img src="https://github.com/CharlesPikachu/codefree/raw/main/docs/screenshot.gif" width="600"/>
+  <img src="https://github.com/CharlesPikachu/codefree/raw/master/docs/screenshot.gif" width="600"/>
 </div>
 <br />
