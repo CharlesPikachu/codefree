@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'imagedl'
+project = 'codefree'
 copyright = '2022, Zhenchao Jin'
 author = 'Zhenchao Jin'
 release = '0.1.0'
